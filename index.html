@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/aa02fbbfef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>HESABAT</h1>
+        </nav>
+        <section class="balance">
+            <div class="main-balance">
+                <h3>BALANSIM</h3>
+                <div><span class="amount"></span><i class="fa-solid fa-manat-sign"></i></div>
+            </div>
+        </section>
+
+        <section class="transactions">
+            <form action="">
+                <div class="form-div">
+                    <div class="div-left"><label for="description">Əməliyyatın təsviri</label>
+                        <input type="text" name="description" id="description" placeholder="Təsvir edin...">
+                    </div>
+                    <div class="div-right">
+                        <label for="amount">Məbləğ</label>
+                        <input type="number" name="amount" id="amount" min="0" placeholder="Məbləğ">
+                    </div>
+                </div>
+                <div class="checks">
+                    <div>
+                        <label for="medaxil">Mədaxil</label>
+                        <input id="checkbox1" type="radio" value="medaxil" name="type">
+                    </div>
+                    <div>
+                        <label for="medaxil">Məxaric</label>
+                        <input id="checkbox2" type="radio" value="mexaric" name="type">
+                    </div>
+                </div>
+                <button type="submit">ƏLAVƏ ET</button>
+
+            </form>
+
+        </section>
+        <section class="history">
+            <h3>TARİXÇƏ</h3>
+            <button class="md-btn"></button>
+            <button class="mx-btn"></button>
+            <button class="all-btn">Hamısı</button>
+            <hr>
+            <ul class="history-list">
+                <li>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
